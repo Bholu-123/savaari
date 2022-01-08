@@ -1,4 +1,7 @@
-import { Facebook, Instagram, Pinterest, Twitter } from "@material-ui/icons";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import PinterestIcon from "@mui/icons-material/Pinterest";
+import TwitterIcon from "@mui/icons-material/Twitter";
 import styles from "../styles/Footer.module.css";
 
 function Footer() {
@@ -35,16 +38,16 @@ function Footer() {
         </ul>
         <div className={styles.SocialContainer}>
           <div className={styles.SocialIcon}>
-            <Facebook />
+            <FacebookIcon />
           </div>
           <div className={styles.SocialIcon}>
-            <Instagram />
+            <InstagramIcon />
           </div>
           <div className={styles.SocialIcon}>
-            <Twitter />
+            <TwitterIcon />
           </div>
           <div className={styles.SocialIcon}>
-            <Pinterest />
+            <PinterestIcon />
           </div>
         </div>
       </div>

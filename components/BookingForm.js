@@ -5,7 +5,7 @@ const BookingForm = ({val}) => {
     const [values, setValues] = useState({
       start: "Banglore",
       destination: "Kolkata",
-      date: "15-12-2020",
+      date: "2020-12-15",
       time: "10:15",
       tripType: ""
     });

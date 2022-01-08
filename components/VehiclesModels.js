@@ -145,6 +145,7 @@ const VehiclesModels = () => {
           <div>
             {preArray.map((item, idx) => (
               <button
+                key={item.Name}
                 className={classes.CarButton}
                 onClick={() => clickHandler("selected", idx)}
                 style={{
@@ -169,13 +170,13 @@ const VehiclesModels = () => {
             className={classes.carouselButton}
             onClick={() => clickHandler("prev")}
           >
-            <img src="./prev.svg" />
+            <img src="./prev.svg" alt="prev" />
           </button>
           <button
             className={classes.carouselButton}
             onClick={() => clickHandler("next")}
           >
-            <img src="./next.svg" />
+            <img src="./next.svg" alt="next" />
           </button>
         </div>
         <div className={classes.images}>
@@ -188,7 +189,7 @@ const VehiclesModels = () => {
               }}
               key={car.Name}
               src={car.image}
-              alt={Date.now()}
+              alt={car.Name}
             />
           ))}
         </div>
