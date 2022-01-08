@@ -1,0 +1,23 @@
+{
+  "name": "savari",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@material-ui/icons": "^4.11.2",
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-datepicker": "^4.5.0",
+    "react-dom": "17.0.2",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "eslint": "8.6.0",
+    "eslint-config-next": "12.0.7"
+  }
+}
