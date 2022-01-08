@@ -6,7 +6,10 @@ const Navbar = () => {
     const [modalOpen, setModalOpen] = useState(false);
     return (
       <div className={styles.container}>
-        <img className={styles.logo} src="./logo.png" />
+        <h1 className={styles.logo}>
+          <span>Yatri</span>
+          cabs
+        </h1>
         <img
           className={styles.login}
           src="./bx-user-circle.svg"

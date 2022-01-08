@@ -19,3 +19,16 @@
     object-fit: contain;
     cursor: pointer;
 }
+
+.logo{
+    text-transform: uppercase;
+    margin-left: 1.5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.logo span{
+    color:#fb6362;
+    margin-right: .5rem;
+}

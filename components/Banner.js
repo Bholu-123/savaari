@@ -45,7 +45,7 @@ const Banner = () => {
             <img className={styles.image} src="./car2.png" />
           </div>
         </Slider>
-        <div style={{ textAlign: "right" }}>
+        {/* <div style={{ textAlign: "right" }}>
           <img
             className={styles.arrowIcon}
             onClick={previous}
@@ -57,7 +57,7 @@ const Banner = () => {
             onClick={next}
             src="./bxs-right-arrow.svg"
           />
-        </div>
+        </div> */}
       </div>
       <div className={styles.bookingWidget}>
         <div className={styles.rideTypeContainer}>

@@ -127,6 +127,7 @@
   list-style-type: none;
   padding: 0 25px 0 25px;
   margin: 0;
+
 }
 
 .bookingWidgetForm li {
@@ -246,7 +247,7 @@
   }
 
   .bookingWidget{
-    width: 27rem;
+    width: 98vw;
   }
 
   .rideTypeContainer{
@@ -256,5 +257,9 @@
   .rideType{
     padding-left: .5rem;
   }
+
+  .bookingWidgetForm {
+  padding: 0 10px 0 10px;
+}
   
 }
