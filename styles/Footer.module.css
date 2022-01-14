@@ -2,7 +2,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #fafafa;
+  background-blend-mode: overlay;
+    background-color: #191919;
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
 }
 
 .Left {
@@ -29,7 +32,7 @@
   height: 40px;
   border-radius: 50%;
   color: white;
-  background-color: rgb(172, 18, 18);
+  background-color: #ef3f3e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,7 +57,7 @@
 
 .Title {
   margin-bottom: 1rem;
-  color: #747474;
+  color: #fff;
   font-size: 2rem;
   text-transform: uppercase;
 }
@@ -76,7 +79,7 @@
 }
 
 .ListItem:hover{
-    text-decoration: underline;
+    color: #fff;
 }
 
 .Payment {

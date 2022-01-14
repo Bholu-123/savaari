@@ -9,6 +9,13 @@ import Services from '../components/Services';
 import Testimonials from '../components/Testimonials';
 import VehiclesModels from '../components/VehiclesModels';
 import Footer from '../components/Footer';
+import { style } from '@mui/system';
+import VehicalsCard from '../components/VehicalsCard';
+import LatestVideo from '../components/LatestVideo';
+import Service from '../components/service';
+import BookingDeals from '../components/BookingDeals';
+import Contact from '../components/Contact';
+import Blog from '../components/Blog';
 
 export default function Home() {
   const [counter, setCounter] = useState(0);
@@ -23,9 +30,9 @@ export default function Home() {
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 300) {
+    if (scrolled > 200) {
       setVisible(true);
-    } else if (scrolled <= 300) {
+    } else if (scrolled <= 200) {
       setVisible(false);
     }
   };
@@ -44,27 +51,34 @@ export default function Home() {
       </Head>
 
       <div>
-        <Navbar />
-        <Banner />
-        <Services />
-        <Testimonials />
-        <VehiclesModels />
-        <Footer/>
+        <div className={styles.sectionOne}>
+          <Navbar />
+          <Banner />
+        </div>
+        <VehicalsCard />
+        <LatestVideo />
+        <Service />
+        <BookingDeals />
+        <Contact />
+        <Blog />
+        <Footer />
         <img
           src="/bx-up-arrow-alt.svg"
           onClick={scrollToTop}
           style={{
+            zIndex: "100",
             position: "fixed",
-            height: "50px",
-            width: "50px",
+            height: "40px",
+            width: "40px",
             bottom: "5vh",
             right: "1.8rem",
-            boderRadius: 100,
+            boderRadius: "10px",
             overflow: "hidden",
-            backgroundColor: "#716d6e",
+            backgroundColor: "#ef3f3e",
             cursor: "pointer",
             display: visible ? "inline" : "none",
           }}
+          className={styles.tapTop}
         />
       </div>
     </div>

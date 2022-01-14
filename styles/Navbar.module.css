@@ -2,14 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
-    height: 10vh;
-    position: fixed;
-    top: 0;
+    margin-bottom: 2rem;
     z-index: 1000;
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-
 }
 
 .login{
@@ -31,4 +26,44 @@
 .logo span{
     color:#fb6362;
     margin-right: .5rem;
+}
+
+.navItems{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.listItem{
+    margin-left: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+}
+
+.listItem {
+  position: relative;
+}
+.listItem:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #fff;
+  height: 1px;
+}
+.listItem:hover:after {
+  width: 100%;
+}
+
+.listItem:after,
+.listItem:before {
+  transition: all .5s;
 }

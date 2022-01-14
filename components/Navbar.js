@@ -10,6 +10,13 @@ const Navbar = () => {
           <span>Yatri</span>
           cabs
         </h1>
+        {/* <ul className={styles.navItems}>
+          <li className={styles.listItem}>Home</li>
+          <li className={styles.listItem}>About</li>
+          <li className={styles.listItem}>Contact</li>
+          <li className={styles.listItem}>Book Car</li>
+          <li className={styles.listItem}>Our Vehicle</li>
+        </ul> */}
         <img
           className={styles.login}
           src="./bx-user-circle.svg"

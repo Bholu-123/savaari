@@ -1,13 +1,5 @@
 import React, { useState } from "react";
 import classes from "../styles/VehiclesModels.module.css";
-// import { ReactComponent as Next } from "./assets/next.svg";
-// import { ReactComponent as Prev } from "./assets/prev.svg";
-// import image1 from "./assets/vehicle1.jpg";
-// import image2 from "./assets/vehicle2.jpg";
-// import image3 from "./assets/vehicle3.jpg";
-// import image4 from "./assets/vehicle4.jpg";
-// import image5 from "./assets/vehicle5.jpg";
-// import image6 from "./assets/vehicle6.jpg";
 
 const cars = [
   {
@@ -19,7 +11,7 @@ const cars = [
     AirConditioning: "Yes",
     MinimumAge: "25 years",
     Tranmission: "Automatic",
-    image: "./vehicle1.jpg",
+    image: "./vehicle1.png",
   },
   {
     Name: "suzuki",
@@ -30,7 +22,7 @@ const cars = [
     AirConditioning: "Yes",
     MinimumAge: "25 years",
     Tranmission: "Automatic",
-    image: "./vehicle2.jpg",
+    image: "./vehicle2.png",
   },
   {
     Name: "verna",
@@ -41,7 +33,7 @@ const cars = [
     AirConditioning: "Yes",
     MinimumAge: "25 years",
     Tranmission: "Automatic",
-    image: "./vehicle3.jpg",
+    image: "./vehicle3.png",
   },
   {
     Name: "xu-v",
@@ -52,7 +44,7 @@ const cars = [
     AirConditioning: "Yes",
     MinimumAge: "25 years",
     Tranmission: "Automatic",
-    image: "./vehicle4.jpg",
+    image: "./vehicle4.png",
   },
   {
     Name: "honda",
@@ -63,7 +55,7 @@ const cars = [
     AirConditioning: "Yes",
     MinimumAge: "25 years",
     Tranmission: "Automatic",
-    image: "./vehicle5.jpg",
+    image: "./vehicle5.png",
   },
   {
     Name: "hero",
@@ -74,7 +66,7 @@ const cars = [
     AirConditioning: "Yes",
     MinimumAge: "25 years",
     Tranmission: "Automatic",
-    image: "./vehicle6.jpg",
+    image: "./vehicle1.png",
   },
   {
     Name: "swift",
@@ -85,7 +77,7 @@ const cars = [
     AirConditioning: "Yes",
     MinimumAge: "25 years",
     Tranmission: "Automatic",
-    image: "./vehicle4.jpg",
+    image: "./vehicle2.png",
   },
   {
     Name: "desize",
@@ -96,7 +88,7 @@ const cars = [
     AirConditioning: "Yes",
     MinimumAge: "25 years",
     Tranmission: "Automatic",
-    image: "./vehicle5.jpg",
+    image: "./vehicle3.png",
   },
   {
     Name: "baleeno",
@@ -107,7 +99,7 @@ const cars = [
     AirConditioning: "Yes",
     MinimumAge: "25 years",
     Tranmission: "Automatic",
-    image: "./vehicle3.jpg",
+    image: "./vehicle4.png",
   },
 ];
 

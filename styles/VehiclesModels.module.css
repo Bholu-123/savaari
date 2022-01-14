@@ -1,18 +1,25 @@
+.VehiclesModels{
+   background-blend-mode: overlay;
+    background-color: #191919;
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+}
 .heading{
-  color: #716d6e;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 3.5rem;
+    padding-top: 25px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-align: center;
 }
 
 .underline{
     height: 4px;
-    width: 135px;
+    width: 90px;
     display: block;
     background-color: #c61334;
     margin: 0 auto;
     margin-top: 1rem;
-    margin-bottom: 2rem
 }
 
 .container{
@@ -47,7 +54,7 @@
 .carouselButton{
     width:47%;
     height: 50%;
-    background-color:#fb6362;
+    background-color:rgb(236, 236, 37);
     border: none;
     outline: none;
     cursor: pointer;
@@ -71,7 +78,7 @@
 }
 .CarButton:hover
 {
-    background-color: #fb6362 !important;
+    background-color: #c61334 !important;
 }
 .myText
 {
@@ -123,7 +130,7 @@
 }
 .descriptionHeading
 {
-    background-color: pink;
+    background-color: yellow;
     font-size: x-large;
     padding:1rem;
     margin: auto;

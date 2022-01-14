@@ -1,48 +1,30 @@
 .container {
-  background: linear-gradient(to bottom, #303131 0%, #4d4f4f 50%, #303131 100%);
-  background-size: contain;
-  display: flex;
-  align-items: center;
+  background-color: rgba(0, 0, 0, 0.26);
+  width: 400px;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  margin-top: 9vh;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
   color: black;
-  margin-bottom: 10rem;
   position: relative;
   min-width: 27rem;
+  margin-left: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.container::after{
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    margin: 0 auto;
-    position: absolute;
-    bottom: -37px;
-    left: 0;
-    right: 0;
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    background: linear-gradient(to bottom, #303131 0%, #4d4f4f 50%, #303131 100%);
-    border-top: 40px solid  #303131;
-}
+@media(max-width: 426px) {
+  .container{
+    width: 320px;
+    margin-left:0;
+  }
 
-@media (max-width: 768px){
-    .container{
-        flex-direction: column;
-    }
 }
 
 .rideTypeContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
+  display: flex;
+  justify-content:center;
+  align-items:center;
 }
-
 .rideType{
     font-size: 1.5rem;
     border-right: 1px solid black;
@@ -58,6 +40,7 @@
     color: #fff;
     position: relative;
     border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .active::after{
@@ -73,33 +56,6 @@
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid #c61334;
-}
-
-.rideType:first-child{
-    border-left: 1px solid black;
-}
-
-.carsImage{
-    margin-right: 2rem;
-    width: 60%;
-    flex: 1;
-    min-width: 27rem;
-    min-width: 320px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.image{
-   width: 100%;
-   min-width: 27rem;
-}
-
-.title{
-   font-size: 2.5rem;
-   margin-bottom: 2.5rem;
-   color: #fff;
-   text-align: center;
 }
 
 .label{
@@ -135,10 +91,12 @@
 }
 
 .formField {
+  border: none;
+  outline: none;
   position: relative;
   background-color: #f4f4f4;
   margin-top: 10px;
-  box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .formFieldCheckbox {
@@ -178,7 +136,6 @@
 .formField input[type='date'],
 .formField input[type='time'],
 .formField  select {
-
   height: 45px;
   width: 100%;
   padding: 0 0 0 3px;
@@ -214,10 +171,10 @@
   height: 58px;
   border: 1px solid transparent;
   font-size: 15px;
-  background-color: #fb6362;
+  background-color: #c61334;
   color: white;
   text-transform: uppercase;
-  box-shadow: 0px 1px 1px 0 darkgrey;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 5px;
   cursor: pointer;
 }
