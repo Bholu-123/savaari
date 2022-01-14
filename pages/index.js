@@ -12,7 +12,7 @@ import Footer from '../components/Footer';
 import { style } from '@mui/system';
 import VehicalsCard from '../components/VehicalsCard';
 import LatestVideo from '../components/LatestVideo';
-import Service from '../components/service';
+import Service from '../components/Service';
 import BookingDeals from '../components/BookingDeals';
 import Contact from '../components/Contact';
 import Blog from '../components/Blog';
