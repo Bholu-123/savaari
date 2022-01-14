@@ -10,19 +10,19 @@ const Blog = () => {
           <span className={styles.underline}></span>
         </div>
         <div className={styles.blogContainer}>
-          <div class={styles.blogBox}>
-            <div class={styles.imgPart}>
+          <div className={styles.blogBox}>
+            <div className={styles.imgPart}>
               <div>
                 <img src="./1.jpg" className={styles.img} alt="" />
               </div>
-              <div class={styles.blogDate}>
+              <div className={styles.blogDate}>
                 <div>
                   <h5>01</h5>
                   <h6>jan</h6>
                 </div>
               </div>
             </div>
-            <div class={styles.blogContent}>
+            <div className={styles.blogContent}>
               <div>
                 <h5>posted by: Julia Holmes</h5>
                 <p>
@@ -36,19 +36,19 @@ const Blog = () => {
               </div>
             </div>
           </div>
-          <div class={styles.blogBox}>
-            <div class={styles.imgPart}>
+          <div className={styles.blogBox}>
+            <div className={styles.imgPart}>
               <div>
                 <img src="./1.jpg" className={styles.img} alt="" />
               </div>
-              <div class={styles.blogDate}>
+              <div className={styles.blogDate}>
                 <div>
                   <h5>01</h5>
                   <h6>jan</h6>
                 </div>
               </div>
             </div>
-            <div class={styles.blogContent}>
+            <div className={styles.blogContent}>
               <div>
                 <h5>posted by: Julia Holmes</h5>
                 <p>

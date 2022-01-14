@@ -38,16 +38,16 @@ function Footer() {
         </ul>
         <div className={styles.SocialContainer}>
           <div className={styles.SocialIcon}>
-            <FacebookIcon />
+            <img src="./bxl-facebook.svg" className={styles.icon}/>
           </div>
           <div className={styles.SocialIcon}>
-            <InstagramIcon />
+            <img src="./bxl-google.svg" className={styles.icon} />
           </div>
           <div className={styles.SocialIcon}>
-            <TwitterIcon />
+            <img src="./bxl-instagram.svg" className={styles.icon} />
           </div>
           <div className={styles.SocialIcon}>
-            <PinterestIcon />
+            <img src="./bxl-twitter.svg" className={styles.icon} />
           </div>
         </div>
       </div>

@@ -1,8 +1,14 @@
 .container{
-    background-blend-mode: overlay;
+    /* background-blend-mode: overlay;
     background-color: #191919;
     padding-top: 2.5rem;
-    padding-bottom: 4rem;
+    padding-bottom: 4rem; */
+
+    background-image: url("../public/grey-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 20px 10px;
 }
 
 .title{
@@ -10,7 +16,7 @@
     margin-bottom: 2rem;
     padding-bottom: 50px;
     font-weight: 800;
-    color: #fff;
+    color: black;
     text-transform: uppercase;
     font-size: 1.5rem;
     text-align: center;
@@ -33,7 +39,7 @@
 
 .categoryBlock{
     padding: 90px 50px 50px;
-    background-color: #2b2b2b;
+    background-color: white;
     border-radius: 25px;
     margin: 35px 0 10px;
     -webkit-box-shadow: 1px 0px 11px 0 rgb(0 0 0 / 4%);
@@ -96,6 +102,7 @@
     font-size: 12px;
     color: #cfd4da;
     text-transform: uppercase;
+    background-color: #f7f7f7;
     padding: 6px 12px;
     border-radius: 5px;
     display: inline-block;
@@ -123,7 +130,7 @@
     text-transform: capitalize;
     margin-bottom: 20px;
     line-height: 1.4;
-    color: #dee2e6;
+    color: black;
 }
 .btn{
     text-transform: uppercase;

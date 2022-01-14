@@ -124,7 +124,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* height: 100vh; */
+  height: auto;
+  padding-bottom: 3rem;
   z-index: 1;
 }
 

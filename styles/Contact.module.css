@@ -1,8 +1,14 @@
 .container{
-    background-blend-mode: overlay;
+    /* background-blend-mode: overlay;
     background-color: #191919;
     padding-top: 2.5rem;
-    padding-bottom: 4rem;
+    padding-bottom: 4rem; */
+
+    background-image: url("../public/grey-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 20px 10px;
 }
 
 .title{
@@ -10,7 +16,7 @@
     margin-bottom: 2rem;
     padding-bottom: 50px;
     font-weight: 800;
-    color: #fff;
+    color: black;
     text-transform: uppercase;
     font-size: 1.5rem;
     text-align: center;
@@ -96,7 +102,7 @@
     font-weight: 800;
     letter-spacing: 0.001em;
     margin-bottom: 35px;
-    color: #eaedef;
+    color: black;
 }
 
 .aboutText h2 {
@@ -108,7 +114,7 @@
 
  .aboutText p {
     font-size: calc(14px + (22 - 14) * ((100vw - 320px) / (1920 - 320)));
-    color: #cfd4da;
+    color: #adadad;
     letter-spacing: 0.06em;
     text-align: left;
     line-height: 1.5;
