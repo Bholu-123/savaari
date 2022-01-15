@@ -50,11 +50,11 @@ const BookCab = () => {
               {/*cab information end*/}
             </div>
           </div>
-          <div class={styles.bookingOrder}>
+          <div className={styles.bookingOrder}>
             <div className={styles.reviewSection}>
               {/*Booking summary start */}
               <div className={styles.reviewBox}>
-                <div class={styles.titleTop}>
+                <div className={styles.titleTop}>
                   <h5>booking summary</h5>
                 </div>
                 <div className={styles.flightDetail}>

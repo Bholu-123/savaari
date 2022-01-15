@@ -71,7 +71,7 @@ const BookingDeals = () => {
           help you explore the best destinations, visit all the must-see places
           and taste the best local food. Did you just land at an Airport or
           Railway Station closest to your destination? No problem! You can use
-          our Airport Taxi in Lucknow, Mumbai, Pune, Banglore, Varanasi &
+          our Airport Taxi in Lucknow, Mumbai, Pune, Banglore, Varanasi
           Kalyan, the transit pick up service to cover the last mile. We'll get
           you to your destination and show you some of the best sights along the
           way. Decided to take a personal day and spend the whole day exploring

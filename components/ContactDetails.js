@@ -54,7 +54,7 @@ const ContactDetails = () => {
                     </div>
 
                     <div className={styles.formGroup}>
-                        <label for="exampleFormControlTextarea1">
+                        <label htmlFor="exampleFormControlTextarea1">
                             special request
                         </label>
                         <textarea
@@ -66,7 +66,7 @@ const ContactDetails = () => {
                     </div>
 
                     <div>
-                        <label for="exampleFormControlTextarea1">
+                        <label htmlFor="exampleFormControlTextarea1">
                             have a coupon code?
                         </label>
                         <div className={styles.inputGroup}>
