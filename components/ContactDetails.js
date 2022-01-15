@@ -84,7 +84,6 @@ const ContactDetails = () => {
                     <div className={styles.submitBtn}>
                         <button
                             type="button"
-                            onclick="window.location.href='cab-booking-payment.html';"
                             className={styles.btn}
                         >
                             proceed to pay
