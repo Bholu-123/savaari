@@ -5,7 +5,7 @@ import styles from '../styles/LatestVideo.module.css';
 const LatestVideo = () => {
     return (
       <div className={styles.container}>
-        <div className={styles.title}>
+        {/* <div className={styles.title}>
           <h2>Latest Video</h2>
           <span className={styles.underline}></span>
         </div>
@@ -52,7 +52,19 @@ const LatestVideo = () => {
               </span>
             </div>
           </div>
-        </div>
+        </div> */}
+        <p>
+          With a presence in 60 cities across the country, Yatri Car Rental
+          calls itself the largest car rental company in terms of geographical
+          reach. Yatri Car Rental prides itself on hospitality, punctuality,
+          complimentary services, transparency, and a keen eye for cleanliness.
+          Offering chauffeur driven local car rental service, Outstation cabs,
+          Airport Taxi, one-way rentals, and rentals for business trips, Yatri
+          Car Rental has a wide variety of cars from a sedan and hatchback to
+          MUVs. They’re further classified into Economy, Mid-Size, Minivan, Full
+          Size, Premium Mid-Size, Premium Full-Size, and Luxury depending upon
+          needs and requirements. All of the said categories come with AC.
+        </p>
       </div>
     );
 }

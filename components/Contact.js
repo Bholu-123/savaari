@@ -11,7 +11,7 @@ const Contact = () => {
           <span className={styles.underline}></span>
         </div>
         <div className={styles.row}>
-          <div className={styles.col1}>
+          {/* <div className={styles.col1}>
             <div className={styles.imageSection}>
               <div className={styles.imgBox}>
                 <img src="./1.jpg" className={styles.image1} />
@@ -26,7 +26,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className={style.col2}>
             <div className={styles.aboutText}>
               <div>

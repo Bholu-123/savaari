@@ -1,15 +1,18 @@
 import React, { useState } from "react";
+import {useRouter} from "next/router";
 import styles from "../styles/Banner.module.css";
 
 const BookingForm = ({val}) => {
+  const router = useRouter();
     const [values, setValues] = useState({
       start: "Banglore",
       destination: "Kolkata",
       date: "2020-12-15",
       time: "10:15",
-      tripType: ""
+      tripType: val
     });
-
+    
+    const { start, destination, date,time, tripType } = values;
     const handleStartChange = (e) => {
       e.persist();
       setValues((values) => ({
@@ -52,12 +55,13 @@ const BookingForm = ({val}) => {
 
     const handleSubmit = (e) => {
       e.preventDefault();
+      router.push(`/car-search/?start=${start}&destination=${destination}&date=${date}&time=${time}&tripType=${val}`);
     };
 
     if(val=="Outstation"){
         return (
           <div>
-            <form>
+            <form onSubmit={handleSubmit}>
               <ul className={styles.bookingWidgetForm}>
                 <li>
                   <label className={styles.label} htmlFor="start">
@@ -124,7 +128,6 @@ const BookingForm = ({val}) => {
                     type="submit"
                     className={styles.formSubmit}
                     value="select cars"
-                    onSubmit={handleSubmit}
                   />
                 </li>
               </ul>
@@ -137,7 +140,7 @@ const BookingForm = ({val}) => {
 
         return (
           <div>
-            <form>
+            <form onSubmit={handleSubmit}>
               <ul className={styles.bookingWidgetForm}>
                 <li>
                   <label className={styles.label} htmlFor="start">
@@ -187,7 +190,6 @@ const BookingForm = ({val}) => {
                     type="submit"
                     className={styles.formSubmit}
                     value="select cars"
-                    onSubmit={handleSubmit}
                   />
                 </li>
               </ul>
@@ -199,7 +201,7 @@ const BookingForm = ({val}) => {
     {
         return (
           <div>
-            <form>
+            <form onSubmit={handleSubmit}>
               <ul className={styles.bookingWidgetForm}>
                 <li>
                   <label className={styles.label} htmlFor="start">
@@ -282,7 +284,6 @@ const BookingForm = ({val}) => {
                     type="submit"
                     className={styles.formSubmit}
                     value="select cars"
-                    onSubmit={handleSubmit}
                   />
                 </li>
               </ul>

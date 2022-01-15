@@ -1,0 +1,10 @@
+.container h2{
+    font-size: calc(18px + (36 - 18) * ((100vw - 320px) / (1920 - 320)));
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 16px;
+    margin-top: 10rem;
+    margin-left: 20rem;
+
+}

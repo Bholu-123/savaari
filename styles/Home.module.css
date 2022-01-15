@@ -144,3 +144,38 @@
   -ms-transform: translateY(-10px);
   -o-transform: translateY(-10px);
 }
+
+.sectionSearchHeader{
+  background-image: url("../public/cab-bg.jpg");
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  padding-bottom: 3rem;
+  z-index: 1;
+ 
+}
+
+.sectionSearchBody{
+  background-color: #f9f9f9;
+  padding: 30px;
+}
+
+.sectionBookCabHeader{
+  background-image: url("../public/cab-bg.jpg");
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  padding-bottom: 3rem;
+  z-index: 1;
+}
+
+.sectionBookCabBody{
+  background-color: white;
+  padding: 70px 70px;
+}

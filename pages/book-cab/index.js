@@ -1,21 +1,11 @@
-import Head from 'next/head';
-import React, { useState } from 'react';
-import Image from 'next/image'
-import Link from 'next/link';
-import styles from '../styles/Home.module.css'
-import Navbar from "../components/Navbar";
-import Banner from '../components/Banner';
-import Services from '../components/Services';
-import Testimonials from '../components/Testimonials';
-import VehiclesModels from '../components/VehiclesModels';
-import Footer from '../components/Footer';
-import { style } from '@mui/system';
-import VehicalsCard from '../components/VehicalsCard';
-import LatestVideo from '../components/LatestVideo';
-import Service from '../components/Service';
-import BookingDeals from '../components/BookingDeals';
-import Contact from '../components/Contact';
-import Blog from '../components/Blog';
+import Head from "next/head";
+import React, { useState } from "react";
+import styles from "../../styles/Home.module.css";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import SearchBanner from "../../components/SearchBanner";
+import SearchSidebar from "../../components/SearchSidebar";
+import BookCab from "../../components/BookCab";
 
 export default function Home() {
   const [counter, setCounter] = useState(0);
@@ -41,7 +31,7 @@ export default function Home() {
     const event = window.addEventListener("scroll", toggleVisible);
 
     return () => event;
-  },[]);
+  }, []);
   return (
     <div className={styles.container}>
       <Head>
@@ -51,16 +41,13 @@ export default function Home() {
       </Head>
 
       <div>
-        <div className={styles.sectionOne}>
+        <div className={styles.sectionBookCabHeader}>
           <Navbar />
-          <Banner />
+          <SearchBanner />
         </div>
-        <VehicalsCard />
-        <LatestVideo />
-        <Service />
-        <BookingDeals />
-        <Contact />
-        {/* <Blog /> */}
+        <div className={styles.sectionBookCabBody}>
+          <BookCab />
+        </div>
         <Footer />
         <img
           src="/bx-up-arrow-alt.svg"
@@ -74,7 +61,7 @@ export default function Home() {
             right: "1.8rem",
             boderRadius: "10px",
             overflow: "hidden",
-            backgroundColor: "rgb(255, 198, 0)",
+            backgroundColor: "#ef3f3e",
             cursor: "pointer",
             display: visible ? "inline" : "none",
           }}
