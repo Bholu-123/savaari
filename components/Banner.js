@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import BookingForm from "./BookingForm";
 
 const Banner = () => {
-  const [rideType, setRideType] = useState("Airport");
+  const [rideType, setRideType] = useState("Outstation");
 
   return (
     <div className={styles.container}>

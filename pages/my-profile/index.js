@@ -3,8 +3,10 @@ import React, { useState } from "react";
 import styles from "../../styles/Home.module.css";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import MyProfile from "../../components/MyProfile";
 import SearchBanner from "../../components/SearchBanner";
 import SearchSidebar from "../../components/SearchSidebar";
+import BookCab from "../../components/BookCab";
 
 export default function Home() {
   const [counter, setCounter] = useState(0);
@@ -40,14 +42,12 @@ export default function Home() {
       </Head>
 
       <div>
-        <div className={styles.sectionSearchHeader}>
+        <div className={styles.myProfileHeader}>
           <Navbar />
-          <SearchBanner />
         </div>
-        <div className={styles.sectionSearchBody}>
-          <SearchSidebar />
+        <div className={styles.myProfileBody}>
+          <MyProfile />
         </div>
-        <Footer />
         <img
           src="/bx-up-arrow-alt.svg"
           onClick={scrollToTop}

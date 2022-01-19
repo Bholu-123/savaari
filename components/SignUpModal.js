@@ -3,7 +3,7 @@ import styles from '../styles/SignUpModal.module.css';
 import SignUpForm from './SignUpForm';
 
 const SignUpModal = ({setOpenModal}) => {
-  const [userType, setUserType] = useState("Corporate");
+  const [type, setType] = useState("SignIn");
     return (
       <div className={styles.modalBackground}>
         <div className={styles.modalContainer}>
@@ -21,24 +21,24 @@ const SignUpModal = ({setOpenModal}) => {
               <span
                 className={[
                   styles.userType,
-                  userType === "Corporate" ? styles.active : {},
+                  type === "SignIn" ? styles.active : {},
                 ].join(" ")}
-                onClick={() => setUserType("Corporate")}
+                onClick={() => setType("SignIn")}
               >
-                Corporate
+                Sign In
               </span>
               <span
                 className={[
                   styles.userType,
-                  userType === "User" ? styles.active : {},
+                  type === "SignUp" ? styles.active : {},
                 ].join(" ")}
-                onClick={() => setUserType("User")}
+                onClick={() => setType("SignUp")}
               >
-                User
+                Sign Up
               </span>
             </div>
             <div>
-              <SignUpForm val={userType} />
+              <SignUpForm val={type} />
             </div>
           </div>
         </div>

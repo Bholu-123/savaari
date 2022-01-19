@@ -1,36 +1,39 @@
 .modalBackground {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.4);
   position: fixed;
-  top: 10%;
+  top: 8.5%;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2000;
+  padding: 20px;
+  /* z-index: 1; */
 }
 
 .modalContainer {
   width: 500px;
-  height: 500px;
+  height: auto;
   border-radius: 12px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   flex-direction: column;
   padding: 25px;
+  padding-top: 5px;
 }
 
 .modalContainer .title {
   display: inline-block;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .titleCloseBtn {
   display: flex;
   justify-content: flex-end;
+  color: #e9b30e;
 }
 
 .titleCloseBtn button {
@@ -38,6 +41,8 @@
   border: none;
   font-size: 25px;
   cursor: pointer;
+  margin-top: 5px;
+
 }
 
 .modalContainer .body {
@@ -69,7 +74,7 @@
 }
 
 #cancelBtn {
-  background-color: crimson;
+  background-color: #e9b30e;
 }
 
 .userTypeContainer{
@@ -90,7 +95,7 @@
 }
 
 .active{
-    background-color: #c61334;
+    background-color: #e9b30e;
     color: #fff;
     position: relative;
     border: none;
@@ -108,7 +113,7 @@
     right: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 10px solid #c61334;
+    border-top: 10px solid #e9b30e;
 }
 
 .rideType:first-child{

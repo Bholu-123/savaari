@@ -147,7 +147,6 @@ const categories = [
 
 const SearchSidebar = () => {
   const [showCategory, setShowCategory] = useState(false);
-  console.log(showCategory);
     return (
       <div className={styles.container}>
         {/* <div className={styles.sidebar}>
