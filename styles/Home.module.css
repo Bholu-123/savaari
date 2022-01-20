@@ -192,6 +192,12 @@
   padding: 30px;
 }
 
+@media(max-width: 500px){
+  .sectionSearchBody{
+    padding: 10px;
+  }
+}
+
 .sectionBookCabHeader{
   /* background-image: url("../public/cab-bg.jpg");
   background-size: cover;
@@ -233,4 +239,10 @@
   background-color: #ebe2e1;
   padding: 70px 70px;
   height: 100vh;
+}
+
+@media(max-width: 500px){
+  .sectionBookCabBody{
+    padding: 30px 10px;
+  }
 }

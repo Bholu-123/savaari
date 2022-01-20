@@ -14,7 +14,7 @@ const VehicalDetails = ({Name,type,seats,ac,price,luggage,start,Fare,TotalFare,i
     return (
       <div className={styles.container}>
         <div className={styles.row}>
-          <div className={styles.col1}>
+          <div className={styles.col}>
             <div className={styles.logoSec}>
               <img src={image} alt={Name} />
               <span className={styles.title}>{Name}</span>

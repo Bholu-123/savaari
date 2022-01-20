@@ -188,3 +188,22 @@
     background-color: #fff;
     color: #e9b30e;
 }
+
+
+@media(max-width:1000px){
+    .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .col{
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media(max-width: 500px){
+    .container{
+        padding: 1rem;
+    }
+}

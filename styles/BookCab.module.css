@@ -16,6 +16,12 @@
     margin-right: 2rem;
 }
 
+@media(max-width: 500px){
+    .contactDetails{
+        margin-right: 0rem;
+    }
+}
+
 .reviewSection .reviewBox {
     background-color: white;
     -webkit-box-shadow: 0px 1px 9px 3px rgb(228 228 228 / 81%);
@@ -69,6 +75,20 @@
 
 .NameRow .lastName{
     flex: 0.5;
+}
+
+@media(max-width: 500px) {
+    .NameRow{
+        flex-direction: column;
+    }
+
+    .NameRow .firstName{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+    
 }
 
 .guestDetail form label {
