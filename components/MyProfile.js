@@ -7,16 +7,27 @@ const MyProfile = () => {
       Email: "amit@gmail.com",
       Address: "Kolkata",
       Mobile: "980123456",
-
+      Pan:"GSA786",
+      Aadhar: "123456789123",
+      GSTIN: "BGHASS12346",
     });
 
     const [edit,setEdit] = useState(true);
 
-    const { Name, Email, Address,Mobile} = data;
+    const { Name, Email, Address,Mobile,Pan,Aadhar,GSTIN} = data;
 
     const changeHandler = (event) => {
-      event.preventDefault();
-      setData({ ...data, [event.target.name]: event.target.value });
+      let name = event.target.name;
+      if (name === "Pan") {
+        setData({
+          ...data,
+          [event.target.name]: event.target.value.toUpperCase(),
+        });
+      }
+      else{
+        setData({ ...data, [event.target.name]: event.target.value });
+      }
+      
     };
 
     return (
@@ -90,6 +101,36 @@ const MyProfile = () => {
                 type="text"
                 name="Address"
                 value={Address}
+                onChange={changeHandler}
+              ></input>
+            </li>
+            <li>
+              <b>Pan number</b>
+              <input
+                disabled={edit}
+                type="text"
+                name="Pan"
+                value={Pan}
+                onChange={changeHandler}
+              ></input>
+            </li>
+            <li>
+              <b>Adhar number</b>
+              <input
+                disabled={edit}
+                type="number"
+                name="Aadhar"
+                value={Aadhar}
+                onChange={changeHandler}
+              ></input>
+            </li>
+            <li>
+              <b>GSTIN(optional)</b>
+              <input
+                disabled={edit}
+                type="text"
+                name="GSTIN"
+                value={GSTIN}
                 onChange={changeHandler}
               ></input>
             </li>
