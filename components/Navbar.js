@@ -65,7 +65,7 @@ const Navbar = () => {
               </li>
               <div onClick={handleClick} className={styles.menuIcon}>
                 <img
-                  src={click ? "./bars-solid.svg" : "./times-solid.svg" }
+                  src={click ? "./times-solid.svg" : "./bars-solid.svg"}
                   className={styles.openIcon}
                 />
               </div>
