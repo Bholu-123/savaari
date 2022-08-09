@@ -60,7 +60,7 @@ export default function Home() {
             right: "1.8rem",
             boderRadius: "10px",
             overflow: "hidden",
-            backgroundColor: "rgb(255, 198, 0)",
+            backgroundColor: "#ef3f3e",
             cursor: "pointer",
             display: visible ? "inline" : "none",
           }}

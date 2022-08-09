@@ -4,13 +4,13 @@
   width: 400px;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  padding-left: .5rem;
-  padding-right: .5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   color: black;
   position: relative;
   min-width: 27rem;
   margin-left: 2rem;
-  margin-top: 12rem;
+  margin-top: 5rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -18,58 +18,55 @@
   -o-border-radius: 8px;
 }
 
-@media(max-width: 426px) {
-  .container{
-    width: 95vw;
-    margin-left:0;
-    margin: auto;
-    margin-top: 15%;
+@media (max-width: 426px) {
+  .container {
+    width: 320px;
+    margin-left: 0;
   }
-
 }
 
-.rideTypeContainer{
+.rideTypeContainer {
   display: flex;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
 }
-.rideType{
-    font-size: 1.5rem;
-    border-right: 1px solid black;
-    padding: 1.5rem;
-    padding-top: 1rem;
-    border-bottom: 1px solid black;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-
-.active{
-    background-color: rgb(255, 198, 0);
-    color: #fff;
-    position: relative;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.rideType {
+  font-size: 1.5rem;
+  border-right: 1px solid black;
+  padding: 1.5rem;
+  padding-top: 1rem;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
-.active::after{
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    margin: 0 auto;
-    position: absolute;
-    bottom: -9px;
-    left: 0;
-    right: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid rgb(255, 198, 0);
+.active {
+  background-color: #c61334;
+  color: #fff;
+  position: relative;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.label{
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
+.active::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  right: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #c61334;
+}
+
+.label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .bookingWidget {
@@ -83,15 +80,13 @@
   padding-bottom: 1px;
   background-color: #fbfbfb;
   border-radius: 5px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, .44);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.44);
 }
-
 
 .bookingWidgetForm {
   list-style-type: none;
   padding: 0 25px 0 25px;
   margin: 0;
-
 }
 
 .bookingWidgetForm li {
@@ -117,20 +112,21 @@
   width: 20px;
 }
 
-.formFieldCheckbox input[type='checkbox'] {
+.formFieldCheckbox input[type="checkbox"] {
   width: 100%;
-  opacity: .0;
+  opacity: 0;
 }
 
-.formFieldCheckbox input[type='checkbox']:checked {
+.formFieldCheckbox input[type="checkbox"]:checked {
   opacity: 1;
 }
 
 .formField label {
   color: #666666;
-} 
+}
 
-.datepicker, .select-button {
+.datepicker,
+.select-button {
   box-sizing: border-box;
   position: absolute;
   top: 3px;
@@ -145,10 +141,10 @@
   color: white;
 }
 
-.formField input[type='text'],
-.formField input[type='date'],
-.formField input[type='time'],
-.formField  select {
+.formField input[type="text"],
+.formField input[type="date"],
+.formField input[type="time"],
+.formField select {
   height: 45px;
   width: 100%;
   padding: 0 0 0 3px;
@@ -165,12 +161,12 @@
   -o-border-radius: 40px;
 }
 
-.formField select{
-    appearance: none;
+.formField select {
+  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
-  text-overflow: '';
+  text-overflow: "";
 }
 
 .formDropdown {
@@ -189,7 +185,7 @@
   height: 58px;
   border: 1px solid transparent;
   font-size: 15px;
-  background-color: rgb(255, 198, 0);
+  background-color: #c61334;
   color: white;
   text-transform: uppercase;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -197,44 +193,42 @@
   cursor: pointer;
 }
 
-.arrowIcon{
+.arrowIcon {
   width: 3rem;
   height: 3rem;
   margin-right: 0rem;
   cursor: pointer;
 }
 
-@media (max-width: 768px){
-    .container{
-        flex-direction: column;
-    }
-
-    .carsImage{
-      width: 90%;
-    }
-}
-
-@media(max-width: 425px) {
-
-  .container{
-    padding-left: .5rem;
-    padding-right: .5rem;
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
   }
 
-  .bookingWidget{
+  .carsImage {
+    width: 90%;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .bookingWidget {
     width: 98vw;
   }
 
-  .rideTypeContainer{
+  .rideTypeContainer {
     width: 27rem;
   }
 
-  .rideType{
-    padding-left: .5rem;
+  .rideType {
+    padding-left: 0.5rem;
   }
 
   .bookingWidgetForm {
-  padding: 0 10px 0 10px;
-}
-  
+    padding: 0 10px 0 10px;
+  }
 }

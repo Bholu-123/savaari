@@ -60,7 +60,7 @@ export default function Home() {
         <Service />
         <BookingDeals />
         <Contact />
-        {/* <Blog /> */}
+        <Blog />
         <Footer />
         <img
           src="/bx-up-arrow-alt.svg"

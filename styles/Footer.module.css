@@ -3,9 +3,9 @@
   justify-content: space-around;
   align-items: center;
   background-blend-mode: overlay;
-    background-color: #191919;
-    padding-top: 2.5rem;
-    padding-bottom: 4rem;
+  background-color: #191919;
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
 }
 
 .Left {
@@ -32,27 +32,27 @@
   height: 40px;
   border-radius: 50%;
   color: white;
-  background-color: rgb(255, 198, 0);
+  background-color: #ef3f3e;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 10px;
   margin-top: 1.5rem;
-  transition: .5s;
-  -webkit-transition: .1s;
-  -moz-transition: .1s;
-  -ms-transition: .1s;
-  -o-transition: .1s;
+  transition: 0.5s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
 }
 
 .SocialIcon:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transform:translateY(-3px);
-    -webkit-transform:translateY(-3px);
-    -moz-transform:translateY(-3px);
-    -ms-transform:translateY(-3px);
-    -o-transform:translateY(-3px);
-    cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: translateY(-3px);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+  cursor: pointer;
 }
 
 .Title {
@@ -71,23 +71,23 @@
 }
 
 .ListItem {
-  min-width:max-content;
+  min-width: max-content;
   margin-bottom: 10px;
   font-size: 1.5rem;
   color: #747474;
   cursor: pointer;
 }
 
-.ListItem:hover{
-    color: rgb(255, 198, 0);
+.ListItem:hover {
+  color: #fff;
 }
 
 .Payment {
-    width: 50%;
+  width: 50%;
 }
 
 @media screen and (max-width: 529px) {
   .Container {
-  flex-direction: column;
+    flex-direction: column;
   }
 }

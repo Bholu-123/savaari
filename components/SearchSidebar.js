@@ -1,6 +1,6 @@
-import React,{ useState} from 'react';
-import styles from '../styles/SearchSidebar.module.css';
-import VehicalDetails from './VehicalDetails';
+import React, { useState } from "react";
+import styles from "../styles/SearchSidebar.module.css";
+import VehicalDetails from "./VehicalDetails";
 
 const carsData = [
   {
@@ -147,66 +147,64 @@ const categories = [
 
 const SearchSidebar = () => {
   const [showCategory, setShowCategory] = useState(false);
-    return (
-      <div className={styles.container}>
-        {/* <div className={styles.sidebar}>
-          <div className={styles.searchBar}>
-            <input
-              type="text"
-              placeholder="Search here.."
-              className={styles.input}
-            />
-            <img className={styles.searchIcon} src="./bx-search-alt-2.svg" />
-          </div>
+  console.log(showCategory);
+  return (
+    <div className={styles.container}>
+      <div className={styles.sidebar}>
+        <div className={styles.searchBar}>
+          <input
+            type="text"
+            placeholder="Search here.."
+            className={styles.input}
+          />
+          <img className={styles.searchIcon} src="./bx-search-alt-2.svg" />
+        </div>
 
-          <div className={styles.middlePart}>
-            <h5>Filter Category</h5>
-            <img
-              className={styles.adjust}
-              src="./adjust.png"
-              onClick={() => setShowCategory((prev) => !prev)}
-            />
-          </div>
-          {
-            categories.map((category) => {
-              return (
-                <div
-                  className={
-                    showCategory ? styles.middlePart : { display: "none" }
-                  }
-                  key={category.Name}
-                >
-                  <h5
-                    style={{ display: showCategory ? "flex" : "none" }}
-                    className={styles.categoryTitle}
-                  >
-                    {category.Name}
-                  </h5>
-                  <span
-                    style={{ display: showCategory ? "flex" : "none" }}
-                    className={styles.categoryIcon}
-                  >
-                    {category.Imgplus}
-                  </span>
-                </div>
-              );
-            })}
+        <div className={styles.middlePart}>
+          <h5>Filter Category</h5>
+          <img
+            className={styles.adjust}
+            src="./adjust.png"
+            onClick={() => setShowCategory((prev) => !prev)}
+          />
+        </div>
+        {categories.map((category) => {
+          return (
+            <div
+              className={showCategory ? styles.middlePart : { display: "none" }}
+              key={category.Name}
+            >
+              <h5
+                style={{ display: showCategory ? "flex" : "none" }}
+                className={styles.categoryTitle}
+              >
+                {category.Name}
+              </h5>
+              <span
+                style={{ display: showCategory ? "flex" : "none" }}
+                className={styles.categoryIcon}
+              >
+                {category.Imgplus}
+              </span>
+            </div>
+          );
+        })}
 
-          <div className={styles.bottomInfo}>
-            <h5>
-              <span>i</span> need help
-            </h5>
-            <h4>856 - 215 - 211</h4>
-            <h6>Monday to Friday 9.00am - 7.30pm</h6>
-          </div>
-        </div> */}
-        <div className={styles.body}>
-          {carsData.map((car) => {
-            return <VehicalDetails key={car.id} {...car} />;
-          })}
+        <div className={styles.bottomInfo}>
+          <h5>
+            <span>i</span> need help
+          </h5>
+          <h4>856 - 215 - 211</h4>
+          <h6>Monday to Friday 9.00am - 7.30pm</h6>
         </div>
       </div>
-    );
-}
+      <div className={styles.body}>
+        {carsData.map((car) => {
+          return <VehicalDetails key={car.id} {...car} />;
+        })}
+      </div>
+    </div>
+  );
+};
 
-export default SearchSidebar
+export default SearchSidebar;
