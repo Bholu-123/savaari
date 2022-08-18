@@ -47,14 +47,14 @@ const BookCab = () => {
               </div>
             </div>
 
-            {/cab information end/}
+            {/*cab information end */}
           </div>
         </div>
-        <div class={styles.bookingOrder}>
+        <div className={styles.bookingOrder}>
           <div className={styles.reviewSection}>
             {/*Booking summary start */}
             <div className={styles.reviewBox}>
-              <div class={styles.titleTop}>
+              <div className={styles.titleTop}>
                 <h5>booking summary</h5>
               </div>
               <div className={styles.flightDetail}>
@@ -121,13 +121,13 @@ const BookCab = () => {
                         <div>
                           <label
                             className={styles.formCheckLabelTitle}
-                            for="exampleRadios3"
+                            htmlFor="exampleRadios3"
                           >
                             RICA500
                           </label>
                           <label
                             className={styles.formCheckLabelPara}
-                            for="exampleRadios3"
+                            htmlFor="exampleRadios3"
                           >
                             Use RICA50, and get $50 off on first booking
                           </label>
@@ -144,13 +144,13 @@ const BookCab = () => {
                         <div>
                           <label
                             className={styles.formCheckLabelTitle}
-                            for="exampleRadios4"
+                            htmlFor="exampleRadios4"
                           >
                             CAB10
                           </label>
                           <label
                             className={styles.formCheckLabelPara}
-                            for="exampleRadios4"
+                            htmlFor="exampleRadios4"
                           >
                             Use FLY10, and get 10% off upto $50 on cab ticket
                             bookings.
@@ -168,13 +168,13 @@ const BookCab = () => {
                         <div>
                           <label
                             className={styles.formCheckLabelTitle}
-                            for="exampleRadios5"
+                            htmlFor="exampleRadios5"
                           >
                             CAB80
                           </label>
                           <label
                             className={styles.formCheckLabelPara}
-                            for="exampleRadios5"
+                            htmlFor="exampleRadios5"
                           >
                             Upto 80% Off + Upto 40% Cashback on Cab booking &
                             more + Extra 10% off via ICICI Cards (10th-13th Oct)

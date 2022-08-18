@@ -50,7 +50,7 @@ const ContactDetails = () => {
           </div>
 
           <div className={styles.formGroup}>
-            <label for="exampleFormControlTextarea1">special request</label>
+            <label htmlFor="exampleFormControlTextarea1">special request</label>
             <textarea
               className={styles.formControl}
               id="exampleFormControlTextarea1"
@@ -60,7 +60,9 @@ const ContactDetails = () => {
           </div>
 
           <div>
-            <label for="exampleFormControlTextarea1">have a coupon code?</label>
+            <label htmlFor="exampleFormControlTextarea1">
+              have a coupon code?
+            </label>
             <div className={styles.inputGroup}>
               <input
                 type="text"
@@ -76,7 +78,7 @@ const ContactDetails = () => {
           <div className={styles.submitBtn}>
             <button
               type="button"
-              onclick="window.location.href='cab-booking-payment.html';"
+              onClick="window.location.href='cab-booking-payment.html';"
               className={styles.btn}
             >
               proceed to pay
